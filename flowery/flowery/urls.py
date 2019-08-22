@@ -19,7 +19,7 @@ from rest_framework import routers
 from library import views
 
 router = routers.DefaultRouter()
-router.register(r'lesson', views.LessonView, 'lesson')
+router.register(r'lesson', views.LessonViewSet, 'lesson')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
